@@ -1,0 +1,86 @@
+#sidebar-first, #sidebar-second {
+
+  h1, h2, .block-title {
+    border-bottom: 1px solid $text-color;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    font-size: 26px;
+  }
+
+  .menu {
+    margin: 0px;
+
+    li {
+      display: block;
+      padding: 0;
+      position: relative;
+      float: none;
+
+      a {
+        color: $text-color;
+        padding: 12px 10px;
+        display: block;
+
+        &:after {
+          border-color: $headings-color transparent transparent;
+        }
+
+        &:hover {
+          color: $headings-color;
+        }
+      }
+
+      .is-dropdown-submenu {
+        @include main-menu-bg;
+        border: 0px;
+        position: static;
+
+        @include small-only {
+          position: static;
+        }
+
+        li {
+
+          a {
+            color: $white;
+
+            &:after {
+              border-color: transparent transparent transparent $white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .block, nav {
+    margin-bottom: 30px;
+    float: left;
+    width: 100%;
+
+    .field-item {
+
+      img {
+        width: 50vh;
+        margin: 15px auto;
+      }
+    }
+  }
+
+  .block {
+
+    ul, ol {
+
+      li {
+
+        a {
+          color: $text-color;
+
+          &:hover {
+            color: $headings-color;
+          }
+        }
+      }
+    }
+  }
+}

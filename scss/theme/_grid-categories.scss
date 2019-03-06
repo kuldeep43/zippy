@@ -1,0 +1,62 @@
+.no-sidebar-top-content, .no-sidebar-bottom-content {
+  margin: 45px 0px;
+
+  .zippy-grid-slider-title, .zippy-grid-title {
+
+    h2 {
+      border-bottom: 1px solid $text-color;
+      padding-bottom: 15px;
+      margin: 15px 0px;
+      font-size: 18px;
+    }
+  }
+
+  .block-title {
+    border-bottom: 1px solid $text-color;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    font-size: 26px;
+  }
+
+  .zippy-grid-image{
+    height: 180px;
+    overflow: hidden;
+
+    @include tablet-width {
+      height: 37vh;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .block {
+    margin-bottom: 30px;
+    float: left;
+    width: 100%;
+
+    .field-item {
+
+      img {
+        width: 50vh;
+        margin: 15px auto;
+      }
+    }
+
+    ul, ol {
+
+      li {
+
+        a {
+          color: $text-color;
+
+          &:hover {
+            color: $headings-color;
+          }
+        }
+      }
+    }
+  }
+}

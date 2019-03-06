@@ -1,0 +1,50 @@
+@mixin main-menu-bg {
+  background-color: #555;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#373a3d), to(#282a2c));
+  background: -webkit-linear-gradient(top, #373a3d, #282a2c);
+  background: -moz-linear-gradient(top, #373a3d, #282a2c);
+  background: -ms-linear-gradient(top, #373a3d, #282a2c);
+  background: -o-linear-gradient(top, #373a3d, #282a2c);
+}
+
+@mixin menu-box-shadow {
+  box-shadow: 0 0 5px #ccc;
+  -webkit-box-shadow: 0 0 5px #ccc;
+}
+
+@mixin border-radius-all {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+// Media Query for small devices
+@mixin small-only {
+  @media screen and (max-width: $small) {
+    @content;
+  }
+}
+
+// Media Query for large devices
+@mixin above-large {
+  @media screen and (min-width: $large) {
+    @content;
+  }
+}
+
+@mixin below-medium {
+  @media screen and (max-width: $medium) {
+    @content;
+  }
+}
+
+@mixin tablet-width {
+  @media screen and (min-width: $small) and (max-width: $medium) {
+    @content;
+  }
+}
+
+@mixin above-medium {
+  @media screen and (min-width: $large) and (max-width: $extra-large) {
+    @content;
+  }
+}

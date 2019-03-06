@@ -1,0 +1,30 @@
+<header class="row" role="banner" aria-label="{{ 'Site header'|t }}">
+  {% if page.header %}
+    <div class="small-12 medium-6 large-6 columns zippy-logo">
+      {{ page.header }}
+    </div>
+  {% endif %}
+  {% if page.search %}
+    <div class="small-12 medium-6 large-6 columns zippy-search text-right">
+      {{ page.search }}
+    </div>
+  {% endif %}
+
+  {% if page.main_menu %}
+    <div class="small-12 medium-12 large-12 columns zippy-main-menu show-for-large">
+        {{ page.main_menu }}
+    </div>
+
+    <div class="small-12 medium-12 large-12 columns zippy-main-menu hide-for-large zippy-mobile-menus">
+      <button type="button" class="button" data-toggle="offCanvas"><i class="fa fa-bars"></i></button>
+      <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+        <button class="close-button" aria-label="Close menu" type="button" data-close>
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="vertical menu accordion-menu" id="panel" data-accordion-menu data-submenu-toggle="true">
+          {{ page.main_menu }}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+</header>

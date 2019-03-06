@@ -1,0 +1,107 @@
+.block-zippy-main-menu {
+  margin: 30px 0px 15px 0px;
+  box-shadow: none;
+  background: none;
+  border: none;
+  min-height: 0;
+  float: left;
+  width: 100%;
+  @include main-menu-bg;
+  @include menu-box-shadow;
+
+  @include small-only {
+    margin: 0px;
+  }
+
+  ul {
+
+    li {
+
+      ul {
+        display: none;
+      }
+    }
+  }
+
+  .menu {
+    margin: 0px;
+
+    &.dropdown {
+
+      li {
+        display: block;
+        float: left;
+        padding: 0;
+        border-left: 1px solid #444;
+        position: relative;
+
+        @include small-only {
+          float: none;
+        }
+
+        a {
+          color: $white;
+          padding: 15px 25px;
+
+          &:after {
+            border-color: $white transparent transparent transparent;
+          }
+
+          &:hover {
+            background: $headings-color;
+            color: $white;
+          }
+        }
+
+        .is-dropdown-submenu {
+          @include main-menu-bg;
+          border: 0px;
+
+          @include small-only {
+            position: static;
+          }
+
+          li {
+
+            a {
+              color: $white;
+
+              &:after {
+                border-color: transparent transparent transparent $white;
+                @include small-only {
+                  border-color: $white transparent transparent transparent;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.zippy-mobile-menus {
+
+  .close-button {
+    z-index: 999;
+    color: $white;
+    outline: none;
+  }
+
+  .dropdown.menu>li.is-dropdown-submenu-parent>a:after {
+    display: block;
+    width: 0;
+    height: 0;
+    border: 6px inset;
+    content: "";
+    border-bottom-width: 0;
+    border-top-style: solid;
+    border-color: $white transparent transparent transparent;
+    right: 5px;
+    margin-top: -3px;
+  }
+
+  .off-canvas.is-open {
+    z-index: 9;
+  }
+}

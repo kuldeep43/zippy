@@ -1,0 +1,78 @@
+header {
+  padding: 30px 0px;
+
+  .zippy-logo {
+
+    .block-zippy-branding {
+
+      a img {
+        width: 170px;
+        border: 0;
+      }
+
+      a {
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .zippy-search {
+
+    @include small-only {
+      margin-top: 30px;
+    }
+
+    .block-zippy-search {
+      float: left;
+      width: 100%;
+      margin-top: 10px;
+
+      form {
+        float: left;
+        width: 100%;
+
+        .form-item input {
+          float: left;
+          width: 76%;
+          margin: 0;
+
+          @include small-only {
+            width: 75%;
+          }
+        }
+
+        .form-actions {
+
+          .button {
+            float: left;
+            width: 24%;
+
+            @include small-only {
+              width: 25%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .zippy-mobile-menus {
+
+    @include below-medium {
+      margin-top: 30px;
+    }
+
+    .button {
+      background: $headings-color;
+      color: $white;
+    }
+  }
+
+  .mobile-left-menus {
+    &.is-open {
+      z-index: 9;
+    }
+  }
+}

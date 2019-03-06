@@ -1,0 +1,30 @@
+h1, h2, h3 {
+  line-height: 1.1;
+  color: $headings-color;
+  font-weight: bold;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+h4 ,h5, h6 {
+  line-height: 1.1;
+  color: $headings-color;
+  font-weight: bold;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+
+p {
+  color: $text-color;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+a {
+  color: $headings-color;
+
+  &:hover {
+    color: $text-color;
+  }
+}

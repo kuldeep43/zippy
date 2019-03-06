@@ -1,0 +1,28 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: $text-color;
+  background: $body-bg;
+  font-size: 16px;
+}
+
+header, nav, section, article, figure, aside, footer {
+  display: block;
+}
+
+.form-actions .form-submit {
+  margin: 0;
+  border: none;
+  padding: .85em 1em;
+  color: $white;
+  background: $headings-color;
+  cursor: pointer;
+  border: 1px solid $headings-color;
+  border-radius: 0;
+
+  &:hover, &:focus {
+    background-color: $headings-color;
+    color: $white;
+  }
+}

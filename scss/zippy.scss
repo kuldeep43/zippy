@@ -1,0 +1,33 @@
+@charset 'UTF-8';
+/*------Utils-------*/
+@import 'utils/variables';
+@import 'utils/mixins';
+/*------Utils-------*/
+
+/*------Base-------*/
+@import 'base/body';
+@import 'base/typography';
+/*------Base-------*/
+
+/*------Layout-------*/
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/menu';
+@import 'layout/sidebar';
+/*------Layout-------*/
+
+/*------module-------*/
+@import 'module/color-switcher';
+/*------module-------*/
+
+/*------Pages-------*/
+@import 'pages/basic-page';
+@import 'pages/main-page';
+@import 'pages/node';
+/*------Pages-------*/
+
+/*------Theme-------*/
+@import 'theme/home-slider';
+@import 'theme/grid-categories';
+@import 'theme/categories-slider';
+/*------Theme-------*/

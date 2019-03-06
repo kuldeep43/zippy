@@ -1,0 +1,15 @@
+global:
+  version: 1.0.0
+  css:
+    base:
+      css/zippy.css: {}
+      css/slick.css: {}
+      css/jquery-ui.min.css: {}
+      #Font-Awesome
+      //cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css: { type: external }
+  js:
+    js/jquery-ui.min.js: {}
+    js/slick.min.js: {}
+    js/zippy.js: {}
+    js/masonry.pkgd.min.js: {}
+    js/color-swichter.js: {}
